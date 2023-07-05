@@ -83,11 +83,12 @@ class FilmorateApplicationTests {
 		assertEquals(1, violations.size());
 		assertEquals("Дата не может быть раньше, чем 28.12.1985", errorMessage.get(0));
 	}
+
 	private User getNewUser() {
 		User user = new User();
 		user.setEmail("example@yandex.ru");
 		user.setLogin("ЮзерЛогин");
-		user.setName("Евгений Бушуев");
+		user.setName("Юрий Бушуев");
 		user.setBirthday(LocalDate.of(1994, 8, 30));
 		return user;
 	}
