@@ -15,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class UserControllerTest {
     private final Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
+
     private User getNewUser() {
         User user = new User();
         user.setEmail("example@yandex.ru");
